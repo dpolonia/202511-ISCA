@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apresentação — Daniel Ferreira Polónia</title>
+    <meta
+      name="description"
+      content="Apresentação interativa de candidatura ao ISCA por Daniel Ferreira Polónia."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', sans-serif;
+      }
+      .slide {
+        display: none;
+      }
+      .slide.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+      .nav-dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 9999px;
+        background-color: rgb(75 85 99);
+        transition: all 0.2s ease;
+      }
+      .nav-dot.active {
+        width: 2rem;
+        background-color: rgb(96 165 250);
+      }
+      .nav-dot:hover {
+        background-color: rgb(107 114 128);
+      }
+      button:disabled {
+        opacity: 0.35;
+        cursor: not-allowed;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white text-gray-900">
+    <main class="w-screen h-screen flex flex-col">
+      <div class="relative flex-1 overflow-hidden" id="slide-wrapper">
+        <section
+          class="slide active"
+          data-slide
+          aria-labelledby="slide-1-heading"
+        >
+          <div
+            class="flex flex-col items-center justify-center h-full text-center px-6"
+          >
+            <h1
+              id="slide-1-heading"
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+            >
+              Daniel Ferreira Polónia
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-600 mb-10">
+              Professor Auxiliar Convidado | DEGEIT - Universidade de Aveiro
+            </p>
+            <div class="max-w-4xl">
+              <p class="text-2xl sm:text-3xl text-blue-900 font-light leading-relaxed">
+                25 anos a integrar gestão, tecnologia e sociedade:<br />
+                <span class="font-semibold"
+                  >experiência profissional e excelência pedagógica</span
+                ><br />
+                na transformação digital da saúde
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-2-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16">
+            <h2
+              id="slide-2-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-10 sm:mb-12"
+            >
+              Um Percurso de Integração, não de Substituição
+            </h2>
+            <div class="flex-1 flex flex-col justify-center space-y-8 sm:space-y-10">
+              <div class="border-l-4 border-blue-500 pl-6 sm:pl-8">
+                <h3 class="text-2xl sm:text-3xl font-semibold text-blue-900 mb-3">
+                  1996-2007: Formação Técnica
+                </h3>
+                <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                  Eng. Eletrónica (UA) • Accenture • Pós-Graduação Gestão (ISEG) •
+                  IEETA/UA (PACS, DICOM)
+                </p>
+              </div>
+              <div class="border-l-4 border-green-500 pl-6 sm:pl-8">
+                <h3 class="text-2xl sm:text-3xl font-semibold text-green-900 mb-3">
+                  2008-2018: Integração Gestão-TI
+                </h3>
+                <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                  Docente DEGEIT • Direção Mestrado Gestão • Investigação IT Saúde
+                  (GOVCOPP) • ANI Consultor Sénior
+                </p>
+              </div>
+              <div class="border-l-4 border-purple-500 pl-6 sm:pl-8">
+                <h3 class="text-2xl sm:text-3xl font-semibold text-purple-900 mb-3">
+                  2019-2025: Transformação Digital Saúde
+                </h3>
+                <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                  Docente DEGEIT (Gestão Qualidade, TSIG) • Doutoramento (VBHC/EHDS)
+                  • Investigador GOVCOPP (Digital Health Systems)
+                </p>
+              </div>
+            </div>
+            <div class="mt-8 text-center">
+              <p class="text-xl sm:text-2xl text-gray-600 italic">
+                Evolução representa integração progressiva de competências
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-3-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-3-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Investigação com Impacto Internacional
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              <div class="bg-blue-50 rounded-xl p-6 sm:p-8">
+                <h3 class="text-2xl font-semibold text-blue-900 mb-6">Métricas Scopus</h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg sm:text-xl text-gray-700">Documentos:</span>
+                    <span class="text-3xl sm:text-4xl font-bold text-blue-900">28</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg sm:text-xl text-gray-700">Citações:</span>
+                    <span class="text-3xl sm:text-4xl font-bold text-blue-900">153</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg sm:text-xl text-gray-700">H-index:</span>
+                    <span class="text-3xl sm:text-4xl font-bold text-blue-900">6</span>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-green-50 rounded-xl p-6 sm:p-8">
+                <h3 class="text-2xl font-semibold text-green-900 mb-6">
+                  Distribuição Temática
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base sm:text-lg text-gray-700"
+                        >Saúde Digital/EHDS</span
+                      >
+                      <span class="text-base sm:text-lg font-semibold text-green-900"
+                        >35%</span
+                      >
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                      <div class="bg-green-600 h-3 rounded-full" style="width: 35%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base sm:text-lg text-gray-700">Inovação/Gestão</span>
+                      <span class="text-base sm:text-lg font-semibold text-green-900"
+                        >30%</span
+                      >
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                      <div class="bg-green-600 h-3 rounded-full" style="width: 30%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-1">
+                      <span class="text-base sm:text-lg text-gray-700">SI Aplicados</span>
+                      <span class="text-base sm:text-lg font-semibold text-green-900"
+                        >25%</span
+                      >
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                      <div class="bg-green-600 h-3 rounded-full" style="width: 25%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 sm:p-8">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                Top 3 Trabalhos Mais Citados
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <span class="text-2xl sm:text-3xl font-bold text-blue-600 mr-4">1</span>
+                  <div>
+                    <p class="text-lg font-medium text-gray-900">
+                      "Corporate Sustainability: A View From the Top"
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      J Business Ethics (Q1), 2017 •
+                      <span class="font-semibold text-blue-600">82 citações</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-2xl sm:text-3xl font-bold text-blue-600 mr-4">2</span>
+                  <div>
+                    <p class="text-lg font-medium text-gray-900">
+                      "Drivers of innovation capacity in AI firms"
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      J Open Innovation, 2021 •
+                      <span class="font-semibold text-blue-600">17 citações</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-2xl sm:text-3xl font-bold text-blue-600 mr-4">3</span>
+                  <div>
+                    <p class="text-lg font-medium text-gray-900">
+                      "R&D tax incentives: are they effective?"
+                    </p>
+                    <p class="text-sm text-gray-600">
+                      J Technology Management, 2019 •
+                      <span class="font-semibold text-blue-600">10 citações</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-4-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-4-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              18 Anos de Excelência Pedagógica Comprovada
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-4">
+              <div
+                class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-8 text-white text-center"
+              >
+                <div class="text-4xl sm:text-5xl font-bold mb-2">18</div>
+                <div class="text-lg">anos docência contínua</div>
+                <div class="text-sm mt-2 opacity-90">2007-2025</div>
+              </div>
+              <div
+                class="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-8 text-white text-center"
+              >
+                <div class="text-4xl sm:text-5xl font-bold mb-2">5K+</div>
+                <div class="text-lg">horas letivas</div>
+              </div>
+              <div
+                class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-8 text-white text-center"
+              >
+                <div class="text-4xl sm:text-5xl font-bold mb-2">1.2K+</div>
+                <div class="text-lg">estudantes impactados</div>
+              </div>
+              <div
+                class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-8 text-white text-center"
+              >
+                <div class="text-4xl sm:text-5xl font-bold mb-2">30+</div>
+                <div class="text-lg">UCs lecionadas</div>
+                <div class="text-sm mt-2 opacity-90">Lic, Mest, Dout</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-yellow-50 rounded-xl p-6 sm:p-8">
+                <h3 class="text-2xl font-semibold text-yellow-900 mb-6">
+                  Avaliações P29
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-lg sm:text-xl text-gray-700">Média:</span>
+                    <span class="text-4xl sm:text-5xl font-bold text-yellow-600">
+                      6.8<span class="text-2xl">/9</span>
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-lg sm:text-xl text-gray-700">Máxima:</span>
+                    <span class="text-3xl sm:text-4xl font-bold text-yellow-600">
+                      8.22<span class="text-xl">/9</span>
+                    </span>
+                  </div>
+                  <p class="text-lg text-gray-600 mt-4">
+                    Múltiplas avaliações <span class="font-semibold">&gt;7.0</span>
+                  </p>
+                </div>
+              </div>
+              <div class="bg-blue-50 rounded-xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-blue-900 mb-4">Diversidade</h3>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Departamentos
+                  </h4>
+                  <p class="text-lg text-gray-700">DEGEIT • ESTGA • ESAN • ESSUA</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">Públicos</h4>
+                  <p class="text-lg text-gray-700">Gestão • Engenharias • Saúde</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800 mb-2">
+                    Orientações
+                  </h4>
+                  <p class="text-lg text-gray-700">
+                    <span class="font-semibold">50</span> mestrados concluídas<br />
+                    <span class="font-semibold">5</span> co-orientações doutoramento
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-5-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-5-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Liderança Pedagógica à Escala
+            </h2>
+            <div
+              class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 sm:p-12 text-white"
+            >
+              <h3 class="text-3xl sm:text-4xl font-bold mb-4">
+                Caso Paradigmático: Competências Transferíveis I
+              </h3>
+              <p class="text-xl sm:text-2xl opacity-90">
+                2023/24 • DEGEIT - Universidade de Aveiro
+              </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-blue-50 rounded-xl p-6 sm:p-8">
+                <h4 class="text-2xl font-semibold text-blue-900 mb-6">Dimensão</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <span class="text-5xl sm:text-6xl font-bold text-blue-600 mr-4"
+                      >~300</span
+                    >
+                    <span class="text-xl text-gray-700">
+                      alunos<br />coordenados
+                    </span>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="text-5xl sm:text-6xl font-bold text-blue-600 mr-4"
+                      >6</span
+                    >
+                    <span class="text-xl text-gray-700">
+                      UCs integradas<br />simultâneas
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-6">
+                <div class="bg-green-50 rounded-xl p-6">
+                  <h4 class="text-2xl font-semibold text-green-900 mb-4">
+                    UCs Integradas
+                  </h4>
+                  <div class="grid grid-cols-2 gap-3 text-lg text-gray-700">
+                    <div>• Empreendedorismo</div>
+                    <div>• Gestão de Projetos</div>
+                    <div>• Comunicação</div>
+                    <div>• Economia I</div>
+                    <div>• Finanças</div>
+                    <div>• Design Thinking</div>
+                  </div>
+                </div>
+                <div class="bg-purple-50 rounded-xl p-6">
+                  <h4 class="text-2xl font-semibold text-purple-900 mb-4">
+                    Coordenação Complexa
+                  </h4>
+                  <ul class="space-y-2 text-lg text-gray-700">
+                    <li>• Equipa docente multi-disciplinar</li>
+                    <li>• Gestão integrada avaliações</li>
+                    <li>• Alinhamento objetivos</li>
+                    <li>• Visão transversal competências</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-xl p-6 text-center">
+              <p class="text-xl sm:text-2xl text-gray-700">
+                <span class="font-semibold text-gray-900">Demonstra:</span> Liderança
+                pedagógica • Visão estratégica • Transformação digital ensino à
+                escala
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-6-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-6-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Da Investigação ao Impacto Social
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-600">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-2xl font-bold text-blue-900">INNHospital</h3>
+                  <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                    >INTERREG PT-ES</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 mb-4">2019-2022</p>
+                <div class="space-y-2 text-gray-700">
+                  <p>
+                    <span class="font-semibold">Papel:</span> Gestor projeto parceiro
+                    UA
+                  </p>
+                  <p>
+                    <span class="font-semibold">Orçamento:</span> €790.941 total |
+                    €56.667 UA
+                  </p>
+                  <p class="text-sm mt-3">
+                    Novo modelo hospital baseado inovação/transferência conhecimento
+                  </p>
+                  <p class="text-xs text-gray-600">Parceiros: CHUC, IPN, APAH</p>
+                </div>
+              </div>
+              <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-2xl font-bold text-green-900">MESTRa</h3>
+                  <span class="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                    >QREN</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 mb-4">2010-2013</p>
+                <div class="space-y-2 text-gray-700">
+                  <p>
+                    <span class="font-semibold">Papel:</span> Coordenador inovação
+                    tecnológica
+                  </p>
+                  <p>
+                    <span class="font-semibold">Orçamento:</span> €1.2M consórcio
+                    (UA, H. S. João, PTCloud)
+                  </p>
+                  <p class="text-sm mt-3">
+                    Plataforma colaborativa para modernização serviços hospitalares
+                  </p>
+                  <p class="text-xs text-gray-600">Prémio Inovação Saúde 2014</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-600">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-2xl font-bold text-purple-900">Agendas Mobilizadoras</h3>
+                  <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                    >PRR</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 mb-4">2022-2025</p>
+                <div class="space-y-2 text-gray-700">
+                  <p>
+                    <span class="font-semibold">Papel:</span> Coordenador UA
+                    (Digital Health Systems)
+                  </p>
+                  <p>
+                    <span class="font-semibold">Financiamento:</span> €12M (consórcio
+                    30 entidades)
+                  </p>
+                  <p class="text-sm mt-3">
+                    Transformação digital cuidados continuados com IA e dados
+                    massivos
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Liga empresas, academia e setor social
+                  </p>
+                </div>
+              </div>
+              <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-500">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-2xl font-bold text-orange-700">Consultoria Estratégica</h3>
+                  <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                    >ANI / AICEP</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 mb-4">2014-2018</p>
+                <div class="space-y-2 text-gray-700">
+                  <p>
+                    <span class="font-semibold">Papel:</span> Consultor sénior
+                    inovação &amp; internacionalização
+                  </p>
+                  <p>
+                    <span class="font-semibold">Impacto:</span> 200+ empresas
+                    acompanhadas
+                  </p>
+                  <p class="text-sm mt-3">
+                    Projetos financiados UE • Estratégia competitiva global
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    Transferência conhecimento academia-indústria
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-7-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-7-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Investigador, Docente, Gestor — Uma Só Visão
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div class="bg-blue-50 rounded-2xl p-6 sm:p-8 space-y-3">
+                <h3 class="text-2xl font-semibold text-blue-900">Investigador</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Doutoramento em curso (VBHC/EHDS)</li>
+                  <li>• Publicações Q1/Q2 (Scopus)</li>
+                  <li>• Projetos internacionais (Interreg, PRR)</li>
+                  <li>• Rede europeia Digital Health</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 rounded-2xl p-6 sm:p-8 space-y-3">
+                <h3 class="text-2xl font-semibold text-green-900">Docente</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• 18 anos experiência comprovada</li>
+                  <li>• Coordenação interdisciplinar UCs</li>
+                  <li>• Avaliações estudantes &gt; 6.5/9</li>
+                  <li>• Orientações mestrado &amp; doutoramento</li>
+                </ul>
+              </div>
+              <div class="bg-purple-50 rounded-2xl p-6 sm:p-8 space-y-3">
+                <h3 class="text-2xl font-semibold text-purple-900">Gestor</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• 15 anos liderança projetos inovação</li>
+                  <li>• Consultoria estratégica (ANI, AICEP)</li>
+                  <li>• Gestão equipas multidisciplinares</li>
+                  <li>• Captação financiamento competitivo</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-gray-900 text-white rounded-2xl p-8 text-center">
+              <p class="text-2xl sm:text-3xl font-light leading-relaxed">
+                <span class="font-semibold">Integração única</span> que liga
+                conhecimento científico, prática pedagógica e aplicação empresarial
+                da transformação digital na saúde.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-8-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-8-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Agenda Científica 2025-2030 (UA/ISCA)
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-blue-50 rounded-xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-blue-900">Linha Principal</h3>
+                <p class="text-lg text-gray-700">
+                  Value-Based Healthcare (VBHC) e Espaço Europeu de Dados de Saúde
+                  (EHDS)
+                </p>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Modelos de maturidade digital em saúde</li>
+                  <li>• Inteligência artificial aplicada a dados clínicos</li>
+                  <li>• Interoperabilidade &amp; governança de dados</li>
+                  <li>• Avaliação económica serviços digitais</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 rounded-xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-green-900">Resultados Esperados</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Publicações Q1/Q2 anuais</li>
+                  <li>• Projetos Horizon Europe &amp; PRR</li>
+                  <li>• Laboratório vivo Digital Health Systems</li>
+                  <li>• Formação avançada (Mestrado/Doutoramento)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-purple-50 rounded-xl p-6 sm:p-8 space-y-4">
+              <h3 class="text-2xl font-semibold text-purple-900">Parcerias Ativas</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-lg text-gray-700">
+                <div>• Universidade de Aveiro (GOVCOPP, IEETA)</div>
+                <div>• Universidade do Porto (FEUP, FMUP)</div>
+                <div>• Universidade de Coimbra (CHUC)</div>
+                <div>• Instituto Politécnico do Porto</div>
+                <div>• Cluster Portugal Digital</div>
+                <div>• Hospitais CUF &amp; Santa Casa</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-9-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-6">
+            <h2
+              id="slide-9-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Estratégia de Ensino Inovador
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div class="bg-blue-50 rounded-2xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-blue-900">Metodologias</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Aprendizagem baseada em projetos reais</li>
+                  <li>• Simulações com IA generativa</li>
+                  <li>• Avaliação contínua com feedback rápido</li>
+                  <li>• Gamificação competências digitais</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 rounded-2xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-green-900">Transformação Digital</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Integração plataformas low-code</li>
+                  <li>• Dashboards de desempenho estudantil</li>
+                  <li>• Recursos educativos abertos</li>
+                  <li>• Comunidades aprendizagem online</li>
+                </ul>
+              </div>
+              <div class="bg-purple-50 rounded-2xl p-6 sm:p-8 space-y-4">
+                <h3 class="text-2xl font-semibold text-purple-900">Resultados</h3>
+                <ul class="space-y-2 text-lg text-gray-700">
+                  <li>• Profissionais preparados para economia digital</li>
+                  <li>• Aumento satisfação estudantil (&gt;7/9)</li>
+                  <li>• Projetos com impacto regional</li>
+                  <li>• Comunidade alumni ativa</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-gray-900 text-white rounded-2xl p-8 text-center">
+              <p class="text-2xl sm:text-3xl font-light leading-relaxed">
+                Ensino centrado no estudante com tecnologia como alavanca para a
+                excelência académica e impacto social.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide aria-labelledby="slide-10-heading">
+          <div class="h-full flex flex-col p-6 sm:p-10 lg:p-16 space-y-8">
+            <h2
+              id="slide-10-heading"
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900"
+            >
+              Contributo Imediato e Visão de Longo Prazo
+            </h2>
+            <div class="space-y-6">
+              <div
+                class="bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-6 sm:p-8 text-white"
+              >
+                <h3 class="text-2xl sm:text-3xl font-bold mb-4">IMEDIATO (Ano 1)</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-lg">
+                  <div>✓ Excelência pedagógica comprovada (18 anos)</div>
+                  <div>✓ Conhecimento profundo UA/ISCA</div>
+                  <div>✓ Liderança equipas docentes</div>
+                  <div>✓ Regência imediata UCs</div>
+                </div>
+              </div>
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 sm:p-8 text-white"
+              >
+                <h3 class="text-2xl sm:text-3xl font-bold mb-4">MÉDIO PRAZO (Anos 2-3)</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-lg">
+                  <div>✓ Inovação pedagógica (UCs novas, IA generativa)</div>
+                  <div>✓ Parcerias estratégicas estabelecidas</div>
+                  <div>✓ Publicações Q1/Q2</div>
+                  <div>✓ Orientações doutoramento iniciadas</div>
+                </div>
+              </div>
+              <div
+                class="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl p-6 sm:p-8 text-white"
+              >
+                <h3 class="text-2xl sm:text-3xl font-bold mb-4">LONGO PRAZO (Anos 4-5)</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-lg">
+                  <div>✓ ISCA referência nacional Digital Health Systems</div>
+                  <div>✓ Linha investigação consolidada</div>
+                  <div>✓ Financiamento internacional captado</div>
+                  <div>✓ Rede colaborações ativa</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-900 text-white rounded-2xl p-6 sm:p-8 text-center">
+              <p class="text-2xl sm:text-3xl font-light leading-relaxed">
+                <span class="font-semibold">18 anos de trajetória</span> +
+                <span class="font-semibold"> visão estratégica</span> +
+                <span class="font-semibold"> compromisso institucional</span> =
+                <br />
+                <span class="text-3xl sm:text-4xl font-bold text-blue-300 mt-4 block"
+                  >Capacidade de contribuir imediatamente e liderar a evolução dos SI
+                  no ISCA</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="bg-gray-800 text-white px-4 sm:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <button
+          id="prev-btn"
+          type="button"
+          class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition"
+        >
+          <span aria-hidden="true">⟵</span>
+          <span>Anterior</span>
+        </button>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+          <span id="slide-indicator" class="text-base sm:text-lg font-semibold"
+            >Slide 1 / 10</span
+          >
+          <div id="dot-container" class="flex gap-2 justify-center"></div>
+        </div>
+
+        <button
+          id="next-btn"
+          type="button"
+          class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition"
+        >
+          <span>Próximo</span>
+          <span aria-hidden="true">⟶</span>
+        </button>
+      </div>
+
+      <div class="bg-gray-100 px-4 sm:px-8 py-3 text-center text-sm text-gray-600">
+        Use as setas do teclado (← →) ou a barra de espaço para navegar | Total:
+        ~10 minutos
+      </div>
+    </main>
+
+    <script>
+      const slides = Array.from(document.querySelectorAll('[data-slide]'));
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const indicator = document.getElementById('slide-indicator');
+      const dotsContainer = document.getElementById('dot-container');
+
+      let currentSlide = 0;
+
+      function renderDots() {
+        dotsContainer.innerHTML = '';
+        slides.forEach((_, index) => {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'nav-dot';
+          dot.setAttribute('aria-label', `Ir para slide ${index + 1}`);
+          dot.addEventListener('click', () => goToSlide(index));
+          dotsContainer.appendChild(dot);
+        });
+      }
+
+      function updateControls() {
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === slides.length - 1;
+        indicator.textContent = `Slide ${currentSlide + 1} / ${slides.length}`;
+
+        Array.from(dotsContainer.children).forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+      }
+
+      function goToSlide(index) {
+        if (index < 0 || index >= slides.length) return;
+        slides[currentSlide].classList.remove('active');
+        slides[index].classList.add('active');
+        currentSlide = index;
+        updateControls();
+      }
+
+      function goToNext() {
+        if (currentSlide < slides.length - 1) {
+          goToSlide(currentSlide + 1);
+        }
+      }
+
+      function goToPrev() {
+        if (currentSlide > 0) {
+          goToSlide(currentSlide - 1);
+        }
+      }
+
+      prevBtn.addEventListener('click', goToPrev);
+      nextBtn.addEventListener('click', goToNext);
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' || event.key === ' ') {
+          goToNext();
+        }
+        if (event.key === 'ArrowLeft') {
+          goToPrev();
+        }
+      });
+
+      renderDots();
+      updateControls();
+    </script>
+  </body>
+</html>
